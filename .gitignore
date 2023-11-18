@@ -1,0 +1,4 @@
+# .gitignore
+
+# Ignora o diretório node_modules
+node_modules/
