@@ -23,6 +23,7 @@ const password = process.env.PASSWORD;
     await page.waitForTimeout(2000); 
     await page.keyboard.press('Enter'); 
     await page.keyboard.press('Enter'); 
+    await page.waitForTimeout(4000); 
     console.log('Login realizado com sucesso!');
     notifier.notify({
       title: 'Cron Bot',
