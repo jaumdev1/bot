@@ -24,6 +24,10 @@ const password = process.env.PASSWORD;
     await page.keyboard.press('Enter'); 
     await page.keyboard.press('Enter'); 
     console.log('Login realizado com sucesso!');
+    notifier.notify({
+      title: 'Cron Bot',
+      message: "Você coletou suas coins diárias!!!",
+    });
 
   } catch (error) {
     console.error('Erro durante o login:', error);
