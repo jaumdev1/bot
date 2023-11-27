@@ -1,4 +1,5 @@
 import puppeteer from 'puppeteer';
+import notifier from 'node-notifier';
 import dotenv from 'dotenv';
 dotenv.config();
 const login = process.env.LOGIN;
